@@ -12,7 +12,8 @@ function userSubmitted(e) {
       email:form.elements.email.value,
       username: form.elements.username.value,
       title:form.elements.title.value,
-      content:form.elements.content.value
+      content:form.elements.content.value,
+      date: Date.now()
   }
   document.querySelector("input[type=submit]").disabled = true;
 
