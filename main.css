@@ -8,11 +8,15 @@ nav {
 
 header nav {
     background-color: teal;
-    color:white
+    color:white;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+
 }
 main {
     margin: 2vw 5vw 5vw 5vw;
-    color:grey
     }
 #sections ul {
     list-style: none;
@@ -25,26 +29,25 @@ main {
     display:grid;
     grid-template-columns: 1fr;
     position:relative;
-    color:black
+    color:black;
+    background-color:rgb(189, 228, 231);
+    margin-left: -5vw;
+    margin-right: -5vw;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 #bannerhome {
-    max-width: 100%;
-    opacity: 33%;
+    width: 100%
 }
 
-#introhome h1 {
-    position:absolute;
-    height: -5vh;
-    left: 3vw;
+#introhome h1, h3, p {
+    margin-left: 5vw;
+    margin-right: 5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#introhome h3 {
-    position:absolute;
-    height: -2vh;
-    left: 3vw;
-    margin-top: 6vh;
-    font-size: 80%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#introhome h3, p {
+    font-size: 80%; 
+
 }
 
 button {
