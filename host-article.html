@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>Host post</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo"></div>
+        <div id="sections">
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <form>
+            <!--Nested labels or not nested depending on the styling needs-->
+      <label>Email<input type="email" name="email" required /></label>
+      <label>Username<input type="text" name="username" required /></label>
+      <label>Title<input type="text" name="title" required /></label>
+      <label>Content<textarea name="content" required></textarea></label>
+      <!---privacy policy + marketing consent--->
+    <input type="submit" value="Send post for review"></input>
+    </form>
+    <section id=congrats class=hidden>
+        <p>Congratulations! you have submmited your article successfully.</p>
+        <p>Our team will review it and come back to you when it's published.</p>
+        <img src="img/image-from-rawpixel-id-2873764-png.png" alt="Congratulations your article has been sent">
+    </section>
+    </main>
+    <footer>
+      <nav id="footer1">
+        <ul>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <nav id="footer2">
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="host-article.js"></script>
+  </body>
+</html>

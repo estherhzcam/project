@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>Article</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo"></div>
+        <div id="sections">
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section id=article>
+            <h3 class=title></h3>
+            <p class=author>by<span></span></p>
+            <p class=date></p>
+            <div class=content></div>
+            <div class=comments>
+                <h2>Comments</h2>
+            </div>
+        </template>
+        <section id=commentyourself>
+            <h3>Add your comment</h3>
+            <form>
+                <label>Username<input type="text" name="username" required /></label>
+                <label>Comment<textarea name="content" required></textarea></label>
+              <input type="submit" value="Post comment"></input>
+            </form>
+        </section>
+        <section id=contribute>
+<h2>Do you want to contribute?</h2>
+<a href="host-article.html"><button>Send your post</button></a>
+        </section>
+    </main>
+    <template id=commentstemplate>
+        <h3 class=title>Title</h3>
+        <p class=author>by<span>Me</span></p>
+        <p class=opinion>Amazin!</p>
+    </template>
+    <footer>
+      <nav id=footer1>
+        <ul>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <nav id=footer2>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="article.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header nav {
+    background-color: teal;
+    color:white
+}
+main {
+    margin: 2vw 5vw 5vw 5vw;
+    color:grey
+    }
+#sections ul {
+    list-style: none;
+    display:flex;
+    flex-direction:horizontal;
+    justify-content: space-around;
+}
+
+#introhome {
+    display:grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    color:black
+}
+#bannerhome {
+    max-width: 100%;
+    opacity: 33%;
+}
+
+#introhome h1 {
+    position:absolute;
+    height: -5vh;
+    left: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#introhome h3 {
+    position:absolute;
+    height: -2vh;
+    left: 3vw;
+    margin-top: 6vh;
+    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: grey;
+    color:white;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100% ;
+    padding: 9px 13px 9px 13px;
+    border:none;
+    border-radius: 7px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
+}
+
+button:hover {
+transform: scale(1.1, 1.1);
+cursor: pointer
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgrey;
+    font-size: small;
+}
+
+/* here starts the css for the host article page */
+
+input, textarea, label {
+    display: block;
+}
+#congrats {
+    background-color: grey;
+    color:white;
+    padding: 5vh 5vw 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#congrats img {
+    max-width: 20%;
+}
+.hidden {
+
+visibility:hidden;
+pointer-events: none;
+
+}
+
+
