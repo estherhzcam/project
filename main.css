@@ -1,57 +1,20 @@
+/* General features */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-header nav {
-    background-color: teal;
-    color:white;
-    position: fixed;
-    top:0;
-    width:100%;
-    z-index: 1;
-
-}
 main {
-    margin: 2vw 5vw 5vw 5vw;
+    margin: 5vw 5vw 5vw 5vw;
     }
-#sections ul {
-    list-style: none;
-    display:flex;
-    flex-direction:horizontal;
-    justify-content: space-around;
-}
 
-#introhome {
-    display:grid;
-    grid-template-columns: 1fr;
-    position:relative;
-    color:black;
-    background-color:rgb(189, 228, 231);
-    margin-left: -5vw;
-    margin-right: -5vw;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-}
-#bannerhome {
-    width: 100%
-}
-
-#introhome h1, h3, p {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#introhome h3, p {
-    font-size: 80%; 
-
+ul, li {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 button {
-    background-color: grey;
+    background-color: teal;
     color:white;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,21 +26,123 @@ button {
 }
 
 button:hover {
-transform: scale(1.1, 1.1);
-cursor: pointer
-}
+    transform: scale(1.1, 1.1);
+    cursor: pointer
+    }
 
 footer ul {
-    list-style: none;
+        list-style: none;
+    }
+    
+footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: lightgrey;
+        font-size: small;
+    }
+
+/* Top menu */
+
+header {
+    background-color: white;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
+    position: fixed;
+    top:0;
+    width:105%;
+    z-index: 1;
+    padding-top: 2vh;
+    margin-left:-5vw;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: lightgrey;
-    font-size: small;
+header nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo"
+    "nav";
+    align-items: center;
 }
+
+nav a img {
+    grid-area: logo;
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+}
+
+nav a.logo-link {
+    margin: auto;
+}
+
+#sections ul {
+    list-style: none;
+    display:flex;
+    flex-direction:horizontal;
+    justify-content: space-around;}
+
+    /* ------------Home-page----------- */
+   
+#introhome {
+    display:grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    color:black;
+    background-color:rgb(189, 228, 231);
+    margin-left: -15vw;
+    margin-right: -15vw;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
+}
+
+#introhome h1, h3, p {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#introhome h3, p {
+    font-size: 80%; 
+}
+
+.preview-wrapper {
+    padding: 3vh 0 3vh 0;
+    margin: 2vh 0 2vh 0;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.preview-wrapper h3 {
+    margin-left: 3vw;
+}
+.preview-wrapper p {
+    margin-left: 3vw;
+}
+.preview-wrapper a {
+    margin-left: 3vw;
+}
+
+#toblog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#toblog a{
+    margin:auto;
+}
+#contribute {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#contribute h2{
+    align-self: center;
+}
+#contribute a {
+    margin: auto;
+}
+
+
+
 
 /* here starts the css for the host article page */
 

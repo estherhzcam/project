@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav>
-        <div id="logo"></div>
+        <a class=logo-link href="index.html"><img src="img/logo.png" alt="logo-home"></a>
         <div id="sections">
           <ul>
             <li>Blog</li>
@@ -31,19 +31,22 @@
         <section id=latestposts>
             <h2>Latest posts</h2>
             <div id=preview-posts></div>
-            <p>Check out all our posts</p>
-            <button>See all posts</button>
         </section>
+        <section id=toblog>
+          <p>If you want to learn more, check out all our posts</p>
+         <a href="blog.html"><button>See all posts</button></a></section>
         <section id=contribute>
 <h2>Do you want to contribute?</h2>
 <a href="host-article.html"><button>Send your post</button></a>
         </section>
     </main>
     <template id=latestpoststemplate>
+      <div class=preview-wrapper>
         <h3 class=title>Titular</h3>
         <p class=author>by<span>Author</span></p>
         <p class=date></p>
         <a href=""><p>Read more</p></a>
+      </div>
     </template>
     <footer>
       <nav id=footer1>
