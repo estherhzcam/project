@@ -20,7 +20,7 @@ fetch(url + articleId + "?fetchchildren=true", {
   });
 
 function showPost(data) {
-  document.querySelector("#article h3").textContent = data.title;
+  document.querySelector("#article h2").textContent = data.title;
   document.querySelector("#article p span").textContent = " " + data.username;
   document.querySelector("#article .content").innerText = data.content;
 
@@ -29,7 +29,7 @@ function showPost(data) {
   data.comments.forEach((comment) => {
     const clone = template.cloneNode(true);
     clone.querySelector("h3").textContent = comment.title;
-    clone.querySelector("p span").textContent = comment.username;
+    clone.querySelector("p span").textContent = " " + comment.username;
     clone.querySelector(".opinion").textContent = comment.content;
     document.querySelector(".comments").appendChild(clone);
   });
@@ -66,7 +66,7 @@ function userSubmittedCom(e) {
       const template = document.querySelector("#commentstemplate").content;
       const clone = template.cloneNode(true);
       clone.querySelector("h3").textContent = data.title;
-      clone.querySelector("p span").textContent = data.username;
+      clone.querySelector("p span").textContent = " " + data.username;
       clone.querySelector(".opinion").textContent = data.content;
       document.querySelector(".comments").appendChild(clone);
     })

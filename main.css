@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    margin: 5vw 5vw 5vw 5vw;
+    margin: 5vw 5vw 5vw 7vw;
     }
 
 ul, li {
@@ -99,12 +99,22 @@ nav a.logo-link {
     padding-bottom: 5vh;
 }
 
-#introhome h1, h3, p {
+#introhome h1{
     margin-left: 15vw;
     margin-right: 15vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#introhome h3, p {
+#introhome h3 {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%; 
+}
+
+#introhome p {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 80%; 
 }
 
@@ -220,6 +230,75 @@ pointer-events: none;
         transform: scale(1.1, 1.1);
         cursor: pointer
         }
+
+        /*-----------------------Article page---------------------------*/
+
+    #articlepage main {
+        padding-top: 25vh;
+    }
+
+    #articlepage #article {
+        margin-bottom: 10vh;
+    }
+
+    #articlepage #article .author {
+        color:lightslategrey;
+    }
+
+    #articlepage .comments .author {
+        color:black;
+        font-weight: 700;
+    }
+    #articlepage #commentwrapper{
+    padding: 3vh 0 3vh 3vw;
+    margin: 2vh 0 2vh 0;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);}
+
+    #articlepage form label{
+        margin-bottom: 4vh
+       }
+       
+       #articlepage form label input{
+        border: 2px solid rgb(230, 228, 228);
+          border-radius: 5px;
+          margin-top: 0.5vh;
+          }
+       
+          #articlepage form label #title{
+          width: 100%;
+          }
+       
+          #articlepage form label textarea{
+           border: 2px solid rgb(230, 228, 228);
+           border-radius: 5px;
+           margin-top: 0.5vh;
+           width: 50%;
+           height: 20vh;
+           }
+       
+       #articlepage form input[type=submit]{
+           background-color: teal;
+           color:white;
+           font-weight: 500;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 100% ;
+           padding: 9px 13px 9px 13px;
+           border:none;
+           border-radius: 7px;
+           box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
+           
+           }
+       
+           
+           #articlepage form input[type=submit]:hover {
+               transform: scale(1.1, 1.1);
+               cursor: pointer
+               }
+
+               #articlepage #commentyourself {
+                margin-bottom: 10vh;
+            }
+
 
     /*--------------responsive styling----------------------*/
 
