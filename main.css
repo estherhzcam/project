@@ -48,7 +48,7 @@ footer {
 
 a:link {
   text-decoration: none;
-  color:teal;
+  color: teal;
 }
 a:visited {
   text-decoration: none;
@@ -97,7 +97,7 @@ nav a.logo-link {
 
 #sections ul a:visited {
   text-decoration: none;
-  color:teal;
+  color: teal;
 }
 
 /* ----------------------------------Home-page------------------------------------ */
@@ -111,7 +111,7 @@ nav a.logo-link {
   background-color: rgba(208, 238, 240, 0.836);
   margin-left: -15vw;
   margin-right: -15vw;
-  padding-top: 25vh;
+  padding-top: 15vh;
   padding-bottom: 5vh;
 }
 
@@ -183,9 +183,12 @@ label {
   display: block;
 }
 #congrats {
-  background-color: grey;
-  color: white;
-  padding: 5vh 5vw 5vh 5vw;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 150%;
+  background-color: rgb(238, 235, 235);
+  padding: 35vh 5vw 5vh 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,8 +202,9 @@ label {
   pointer-events: none;
 }
 
+
 #host-page main {
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 #host-page form label {
@@ -313,23 +317,22 @@ label {
 /*----------------------------------Blog page-----------------------------------*/
 
 #blog-page main {
-    padding-top: 25vh;
+  padding-top: 15vh;
 }
 #blog-page #introblog {
-    text-align: center;
+  text-align: center;
 }
 
 /*-------------------------------responsive styling-----------------------------*/
 
 @media only screen and (min-width: 700px) {
-
   header nav {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-columns: auto;
     grid-template-areas: "logo nav";
     align-items: center;
-    grid-gap: 25vw
+    grid-gap: 25vw;
   }
 
   .logo-link {
@@ -353,12 +356,23 @@ label {
   #introhome p {
     margin: 0 25vw 0 25vw;
   }
+  #host-page main {
+    padding-top: 10vh;
+  }
+
+  #blog-page main {
+    padding-top: 7vh;
+  }
+
+  #articlepage main {
+    padding-top: 7vh;
+  }
 }
 
 @media only screen and (min-width: 900px) {
   #introhome {
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 7vh;
     padding-bottom: 5vh;
   }
   #introhome p {
