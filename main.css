@@ -1,325 +1,329 @@
-/* General features */
+/*---------------------------- General features-------------------------- */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
-    margin: 5vw 5vw 5vw 7vw;
-    }
+  margin: 5vw 5vw 5vw 7vw;
+}
 
-ul, li {
-    margin-left: 0;
-    padding-left: 0;
+ul,
+li {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 button {
-    background-color: teal;
-    color:white;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100% ;
-    padding: 9px 13px 9px 13px;
-    border:none;
-    border-radius: 7px;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  padding: 9px 13px 9px 13px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    transform: scale(1.1, 1.1);
-    cursor: pointer
-    }
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
 
 footer ul {
-        list-style: none;
-    }
-footer ul li{
-        margin-bottom: 2vh;
-    }
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 2vh;
+}
 footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: lightgrey;
-        font-size: small;
-        padding: 5vh 0 5vh 0;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: lightgrey;
+  font-size: small;
+  padding: 5vh 0 5vh 0;
+}
 
-/* Top menu */
+/*------------------------ Top menu ---------------------------------*/
 
 header {
-    background-color: white;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
-    position: fixed;
-    top:0;
-    width:105%;
-    z-index: 1;
-    padding-top: 2vh;
-    margin-left:-5vw;
+  background-color: white;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 105%;
+  z-index: 1;
+  padding-top: 2vh;
+  margin-left: -5vw;
 }
 
 header nav {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
     "logo"
     "nav";
-    align-items: center;
+  align-items: center;
 }
 
 nav a img {
-    grid-area: logo;
-    width: 70px;
-    height: 70px;
-    max-width: 100%;
+  grid-area: logo;
+  width: 70px;
+  height: 70px;
+  max-width: 100%;
 }
 
 nav a.logo-link {
-    margin: auto;
+  margin: auto;
 }
 
 #sections ul {
-    list-style: none;
-    display:flex;
-    flex-direction:horizontal;
-    justify-content: space-around;}
-
- /* ----------------------------------Home-page------------------------------------ */
-   
-#introhome {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-gap: -2vh;
-    position:relative;
-    color:black;
-    background-color:rgba(208, 238, 240, 0.836);
-    margin-left: -15vw;
-    margin-right: -15vw;
-    padding-top: 25vh;
-    padding-bottom: 5vh;
+  list-style: none;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-around;
 }
 
-#introhome h1{
-    margin-left: 15vw;
-    margin-right: 15vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* ----------------------------------Home-page------------------------------------ */
+
+#introhome {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: -2vh;
+  position: relative;
+  color: black;
+  background-color: rgba(208, 238, 240, 0.836);
+  margin-left: -15vw;
+  margin-right: -15vw;
+  padding-top: 25vh;
+  padding-bottom: 5vh;
+}
+
+#introhome h1 {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #introhome h3 {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80%; 
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80%;
 }
 
 #introhome p {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 80%; 
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80%;
 }
 
 .preview-wrapper {
-    padding: 3vh 0 3vh 0;
-    margin: 2vh 0 2vh 0;
-    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  padding: 3vh 0 3vh 0;
+  margin: 2vh 0 2vh 0;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 .preview-wrapper h3 {
-    margin-left: 3vw;
+  margin-left: 3vw;
 }
 .preview-wrapper p {
-    margin-left: 3vw;
+  margin-left: 3vw;
 }
 .preview-wrapper a {
-    margin-left: 3vw;
+  margin-left: 3vw;
 }
 
 #toblog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-#toblog a{
-    margin:auto;
+#toblog a {
+  margin: auto;
 }
-#toblog p{
-   text-align: center;
-   margin: 3ch 0 3vh 0;
-
+#toblog p {
+  text-align: center;
+  margin: 3ch 0 3vh 0;
 }
 #contribute {
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
 }
 
-#contribute h2{
-    align-self: center;
+#contribute h2 {
+  align-self: center;
 }
 #contribute a {
-    margin: auto;
+  margin: auto;
 }
 
+/*------------------------------Host article page---------------------------- */
 
-
-/*---------- here starts the css for the host article page----------------- */
-
-input, textarea, label {
-    display: block;
+input,
+textarea,
+label {
+  display: block;
 }
 #congrats {
-    background-color: grey;
-    color:white;
-    padding: 5vh 5vw 5vh 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: grey;
+  color: white;
+  padding: 5vh 5vw 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #congrats img {
-    max-width: 20%;
+  max-width: 20%;
 }
 .hidden {
-
-visibility:hidden;
-pointer-events: none;
-
+  visibility: hidden;
+  pointer-events: none;
 }
 
 #host-page main {
+  padding-top: 25vh;
+}
+
+#host-page form label {
+  margin-bottom: 5vh;
+}
+
+#host-page form label input {
+  border: 2px solid rgb(230, 228, 228);
+  border-radius: 5px;
+  margin-top: 0.5vh;
+}
+
+#host-page form label #title {
+  width: 100%;
+}
+
+#host-page form label textarea {
+  border: 2px solid rgb(230, 228, 228);
+  border-radius: 5px;
+  margin-top: 0.5vh;
+  width: 100%;
+  height: 70vh;
+}
+
+#host-page form input[type="submit"] {
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  padding: 9px 13px 9px 13px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+#host-page form input[type="submit"]:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+/*--------------------------------Article page---------------------------------*/
+
+#articlepage main {
+  padding-top: 25vh;
+}
+
+#articlepage #article {
+  margin-bottom: 10vh;
+}
+
+#articlepage #article .author {
+  color: lightslategrey;
+}
+
+#articlepage .comments .author {
+  color: black;
+  font-weight: 700;
+}
+#articlepage #commentwrapper {
+  padding: 3vh 0 3vh 3vw;
+  margin: 2vh 0 2vh 0;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+#articlepage form label {
+  margin-bottom: 4vh;
+}
+
+#articlepage form label input {
+  border: 2px solid rgb(230, 228, 228);
+  border-radius: 5px;
+  margin-top: 0.5vh;
+}
+
+#articlepage form label #title {
+  width: 100%;
+}
+
+#articlepage form label textarea {
+  border: 2px solid rgb(230, 228, 228);
+  border-radius: 5px;
+  margin-top: 0.5vh;
+  width: 50%;
+  height: 20vh;
+}
+
+#articlepage form input[type="submit"] {
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  padding: 9px 13px 9px 13px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+#articlepage form input[type="submit"]:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+#articlepage #commentyourself {
+  margin-bottom: 10vh;
+}
+
+/*----------------------------------Blog page-----------------------------------*/
+
+#blog-page main {
     padding-top: 25vh;
 }
-
-#host-page form label{
- margin-bottom: 5vh
+#blog-page #introblog {
+    text-align: center;
 }
 
-#host-page form label input{
-    border: 2px solid rgb(230, 228, 228);
-   border-radius: 5px;
-   margin-top: 0.5vh;
-   }
+/*-------------------------------responsive styling-----------------------------*/
 
-   #host-page form label #title{
-   width: 100%;
-   }
+@media only screen and (min-width: 700px) {
+  #introhome {
+    text-align: center;
+    padding-bottom: 10vh;
+  }
+  #introhome p {
+    margin: 0 25vw 0 25vw;
+  }
+}
 
-   #host-page form label textarea{
-    border: 2px solid rgb(230, 228, 228);
-    border-radius: 5px;
-    margin-top: 0.5vh;
-    width: 100%;
-    height: 70vh;
-    }
-
-#host-page form input[type=submit]{
-    background-color: teal;
-    color:white;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100% ;
-    padding: 9px 13px 9px 13px;
-    border:none;
-    border-radius: 7px;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
-    margin:auto;
-    }
-
-    
-    #host-page form input[type=submit]:hover {
-        transform: scale(1.1, 1.1);
-        cursor: pointer
-        }
-
-        /*-----------------------Article page---------------------------*/
-
-    #articlepage main {
-        padding-top: 25vh;
-    }
-
-    #articlepage #article {
-        margin-bottom: 10vh;
-    }
-
-    #articlepage #article .author {
-        color:lightslategrey;
-    }
-
-    #articlepage .comments .author {
-        color:black;
-        font-weight: 700;
-    }
-    #articlepage #commentwrapper{
-    padding: 3vh 0 3vh 3vw;
-    margin: 2vh 0 2vh 0;
-    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);}
-
-    #articlepage form label{
-        margin-bottom: 4vh
-       }
-       
-       #articlepage form label input{
-        border: 2px solid rgb(230, 228, 228);
-          border-radius: 5px;
-          margin-top: 0.5vh;
-          }
-       
-          #articlepage form label #title{
-          width: 100%;
-          }
-       
-          #articlepage form label textarea{
-           border: 2px solid rgb(230, 228, 228);
-           border-radius: 5px;
-           margin-top: 0.5vh;
-           width: 50%;
-           height: 20vh;
-           }
-       
-       #articlepage form input[type=submit]{
-           background-color: teal;
-           color:white;
-           font-weight: 500;
-           font-family: Verdana, Geneva, Tahoma, sans-serif;
-           font-size: 100% ;
-           padding: 9px 13px 9px 13px;
-           border:none;
-           border-radius: 7px;
-           box-shadow: 0 4px 16px 0 rgba(0,0,0,0.3);
-           
-           }
-       
-           
-           #articlepage form input[type=submit]:hover {
-               transform: scale(1.1, 1.1);
-               cursor: pointer
-               }
-
-               #articlepage #commentyourself {
-                margin-bottom: 10vh;
-            }
-
-
-    /*--------------responsive styling----------------------*/
-
-    @media only screen and (min-width:700px) {
-        
-        #introhome {
-            text-align: center;
-            padding-bottom: 10vh;
-        } 
-        #introhome p{
-            margin: 0 25vw 0 25vw;
-    
-    }}
-
-    @media only screen and (min-width:1000px) {
-        
-        #introhome {
-            text-align: center;
-            padding-bottom: 10vh;
-        } 
-        #introhome p{
-            margin: 0 35vw 0 35vw;
-    
-    }}
+@media only screen and (min-width: 900px) {
+  #introhome {
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+  }
+  #introhome p {
+    margin: 0 35vw 0 35vw;
+  }
+}

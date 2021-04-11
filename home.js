@@ -1,6 +1,6 @@
 
 
-const url = 'https://keaprojects21-50cf.restdb.io/rest/guest-posts?q={}&max=3&h={"$orderby": "date"}';
+const url = 'https://keaprojects21-50cf.restdb.io/rest/guest-posts?q={}&max=3&h={"$orderby": {"date": -1}}';
 
 const options = {
     headers: {

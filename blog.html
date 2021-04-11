@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="main.css">
     <title>Gamusinos blog</title>
   </head>
-  <body>
+  <body id=blog-page>
     <header>
       <nav>
         <a class=logo-link href="index.html"><img src="img/logo.png" alt="logo-home"></a>
         <div id="sections">
           <ul>
-            <a href="blog.html"><li>Blog</li></a>
-            <a href="host-article.html"><li>Contribute</li></a>
-            <a href="index.html"><li>Contact</li></a>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="blog.html"><li>Blog</li></a>
+              <a href="host-article.html"><li>Contribute</li></a>
+            </ul>
           </ul>
         </div>
       </nav>
@@ -33,11 +35,13 @@
         </section>
     </main>
     <template id=list-template>
+      <div class="preview-wrapper">
         <h3 class=title></h3>
         <p class=author>by<span></span></p>
         <p class=date></p>
-        <p class=content></p>
-        <div class=comments></div>
+        <p class=comments></p>
+        <a href=""><p>Read more</p></a>
+        </div>
     </template>
     <footer>
       <nav id=footer1>
