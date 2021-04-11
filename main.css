@@ -46,6 +46,15 @@ footer {
   padding: 5vh 0 5vh 0;
 }
 
+a:link {
+  text-decoration: none;
+  color:teal;
+}
+a:visited {
+  text-decoration: none;
+  color: midnightblue(43, 100, 100);
+}
+
 /*------------------------ Top menu ---------------------------------*/
 
 header {
@@ -78,12 +87,17 @@ nav a img {
 nav a.logo-link {
   margin: auto;
 }
-
 #sections ul {
   list-style: none;
   display: flex;
   flex-direction: horizontal;
   justify-content: space-around;
+  font-weight: 600;
+}
+
+#sections ul a:visited {
+  text-decoration: none;
+  color:teal;
 }
 
 /* ----------------------------------Home-page------------------------------------ */
@@ -308,6 +322,30 @@ label {
 /*-------------------------------responsive styling-----------------------------*/
 
 @media only screen and (min-width: 700px) {
+
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto;
+    grid-template-areas: "logo nav";
+    align-items: center;
+    grid-gap: 25vw
+  }
+
+  .logo-link {
+    grid-area: logo;
+    justify-self: flex-start;
+  }
+
+  #sections ul {
+    grid-area: nav;
+    justify-self: end;
+    list-style: none;
+    display: flex;
+    flex-direction: horizontal;
+    font-weight: 600;
+  }
+
   #introhome {
     text-align: center;
     padding-bottom: 10vh;

@@ -18,11 +18,11 @@ const template = document.querySelector("#latestpoststemplate").content;
  function showInfo(info) {
     console.log(info);
     info.forEach((post)=> { 
-      console.log(post);
+    if (post.approved == true){
     const clone = template.cloneNode(true);
     clone.querySelector("h3").textContent = post.title;
     clone.querySelector("p span").textContent = " " + post.username;
     clone.querySelector("a").href = 'article.html?article=' + post._id;
-    document.querySelector("#preview-posts").appendChild(clone);})
+    document.querySelector("#preview-posts").appendChild(clone);}})
 
 } 
