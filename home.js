@@ -1,6 +1,6 @@
 
 
-const url = 'https://keaprojects21-50cf.restdb.io/rest/guest-posts?q={}&max=3&h={"$orderby": {"date": -1}}';
+const url = 'https://keaprojects21-50cf.restdb.io/rest/guest-posts?q={"approved":true}&max=5&h={"$orderby":{"date":-1}}';
 
 const options = {
     headers: {
@@ -18,11 +18,11 @@ const template = document.querySelector("#latestpoststemplate").content;
  function showInfo(info) {
     console.log(info);
     info.forEach((post)=> { 
-    if (post.approved == true){
+   /*  if (post.approved == true){ */
     const clone = template.cloneNode(true);
     clone.querySelector("h3").textContent = post.title;
     clone.querySelector("p span").textContent = " " + post.username;
     clone.querySelector("a").href = 'article.html?article=' + post._id;
-    document.querySelector("#preview-posts").appendChild(clone);}})
+    document.querySelector("#preview-posts").appendChild(clone);})
 
 } 
